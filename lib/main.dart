@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'binding/init_bindings.dart';
 import 'src/app.dart';
 
 void main() {
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.white, titleTextStyle: TextStyle(color: Colors.black)),
         useMaterial3: true,
       ),
+      initialBinding: InitBinding(),
       home: const App()
     );
   }
